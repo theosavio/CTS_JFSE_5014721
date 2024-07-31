@@ -1,0 +1,19 @@
+ex -1 --- inventory management system
+
+
+Step 1: Understand the Problem
+Why Data Structures and Algorithms are Essential in Handling Large Inventories
+
+Efficient data structures and algorithms are crucial for handling large inventories because they ensure:
+
+Fast Access
+Efficient Storage
+Scalability
+Maintainability
+For an inventory management system, suitable data structures include:
+
+ArrayList: Good for ordered collections and efficient iteration, but not ideal for frequent insertions and deletions.
+
+HashMap: Provides average O(1) time complexity for insertions, deletions, and lookups, making it suitable for inventory management where quick access by product ID is necessary.
+
+TreeMap: Maintains sorted order of keys, useful if sorted product listings are needed, but has O(log n) time complexity for basic operations.

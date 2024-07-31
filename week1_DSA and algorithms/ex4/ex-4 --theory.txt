@@ -1,0 +1,41 @@
+Step 1: Understand Array Representation
+
+
+How Arrays are Represented in Memory:
+
+Memory Allocation: Arrays are a contiguous block of memory where elements are stored sequentially. Each element in the array is stored at a memory address that is offset by a constant value (depending on the data type).
+
+Advantages of Arrays:
+
+Fast Access: You can access elements directly using the index in constant time, O(1), because the memory address of any element can be calculated directly.
+
+Fixed Size: Once an array is created, it has a fixed size, which can be both an advantage (predictable memory usage) and a limitation (inflexibility).
+
+
+Analysis
+
+Time Complexity of Operations:
+
+Add Operation:
+
+Time Complexity: O(1) if there is space in the array.
+If the array is full, the time complexity of adding could be O(n) if you need to resize the array (though resizing isn't implemented in this example).
+
+Search Operation:
+
+Time Complexity: O(n) because you may need to check each element in the array.
+Traverse Operation:
+
+Time Complexity: O(n) because you are visiting each element once.
+
+Delete Operation:
+
+Time Complexity: O(n) because after finding the element, you may need to shift the subsequent elements to fill the gap left by the deleted element.
+
+Limitations of Arrays and When to Use Them:
+
+Fixed Size: Arrays have a fixed size, which can be limiting if the number of employees is not known in advance or fluctuates.
+
+Insertion/Deletion Cost: Insertion and deletion operations, except at the end, require shifting elements, making them costly in terms of time complexity (O(n)).
+
+Better Alternatives: For dynamic or frequently changing data, other data structures like ArrayList, LinkedList, or HashMap can be more suitable due to their dynamic resizing and more efficient operations.

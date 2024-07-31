@@ -1,0 +1,56 @@
+Step 1: Understand Sorting Algorithms
+Bubble Sort
+
+How it works: Repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The process is repeated until the list is sorted.
+
+Time Complexity:
+Best Case: O(n) (if the list is already sorted)
+Average and Worst Case: O(n^2) (due to repeated comparisons and swaps)
+
+Insertion Sort
+
+How it works: Builds the sorted array one item at a time, by repeatedly picking the next item and inserting it into the correct position in the already sorted part.
+
+Time Complexity:
+
+Best Case: O(n) (if the list is already sorted)
+Average and Worst Case: O(n^2) (if the list is in reverse order)
+
+
+Quick Sort
+
+How it works: Divides the array into two smaller arrays based on a pivot element, such that elements less than the pivot are on one side and greater elements are on the other. It then recursively sorts the subarrays.
+
+Time Complexity:
+
+Best Case and Average Case: O(n log n) (good partitioning)
+Worst Case: O(n^2) (if the pivot selection is poor, e.g., always the smallest or largest element)
+
+Merge Sort
+
+How it works: Divides the array into two halves, sorts each half, and then merges the sorted halves back together.
+
+Time Complexity:
+Best, Average, and Worst Case: O(n log n) (because it always splits the array and merges them)
+
+Analysis :
+
+Time Complexity Comparison
+
+Bubble Sort:
+
+Best Case: O(n) (if the array is already sorted)
+Average Case: O(n^2)
+Worst Case: O(n^2)
+
+Quick Sort:
+
+Best Case: O(n log n) (good pivot selection)
+Average Case: O(n log n)
+Worst Case: O(n^2) (poor pivot selection)
+
+Why Quick Sort is Generally Preferred Over Bubble Sort
+
+Efficiency: Quick Sort is significantly more efficient on large datasets due to its O(n log n) average time complexity, whereas Bubble Sort is inefficient due to its O(n^2) complexity.
+
+Performance: Quick Sort is usually faster in practice even compared to other O(n log n) algorithms like Merge Sort because of its in-place sorting mechanism, which reduces the overhead of additional memory usage.

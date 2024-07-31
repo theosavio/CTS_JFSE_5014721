@@ -1,0 +1,39 @@
+Exercise 2: E-commerce Platform Search Function
+
+Step 1: Understand Asymptotic Notation
+
+Big O Notation
+
+Big O notation is used to describe the performance or complexity of an algorithm. It provides an upper bound on the time or space complexity in terms of the size of the input (n). It helps in analyzing how an algorithm's runtime or space requirements grow as the input size increases.
+
+Best, Average, and Worst-Case Scenarios for Search Operations
+
+Best Case: The scenario where the algorithm performs the minimum number of steps. For search operations, this would be finding the target element at the first position.
+
+Average Case: The scenario that represents the typical behavior of the algorithm. It usually assumes that all elements are equally likely to be searched.
+
+Worst Case: The scenario where the algorithm performs the maximum number of steps. For search operations, this would be searching through the entire collection without finding the target element (or finding it at the last position).
+
+
+ Analysis
+Time Complexity Comparison
+Linear Search:
+
+Best Case: O(1) (if the target is the first element)
+Average Case: O(n) (on average, half of the elements will be checked)
+Worst Case: O(n) (if the target is not found or is the last element)
+Binary Search:
+
+Best Case: O(1) (if the target is the middle element)
+Average Case: O(log n) (since the search interval is halved each time)
+Worst Case: O(log n) (if the target is not found and the interval is reduced to zero)
+
+Which Algorithm is More Suitable and Why?
+
+For an e-commerce platform, the choice of search algorithm depends on the specific use case:
+
+Linear Search: Suitable for small or unsorted datasets. It's simple and doesn't require preprocessing (sorting).
+
+Binary Search: Ideal for large and sorted datasets. It significantly reduces the number of comparisons needed to find an element, making it much faster for large datasets. However, it requires the dataset to be sorted beforehand, which adds an additional O(n log n) complexity for the sorting step.
+
+For an e-commerce platform with a large number of products, binary search is more suitable due to its superior time complexity, provided that the product list is maintained in a sorted order

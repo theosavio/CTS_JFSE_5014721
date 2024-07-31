@@ -1,0 +1,46 @@
+Step 1: Understand Search Algorithms
+
+Linear Search:
+
+Explanation: Linear search is the simplest search algorithm where we start from the first element and check each element sequentially until we find the target element or reach the end of the list.
+
+Time Complexity: O(n) in the worst-case scenario where n is the number of elements in the list.
+
+Use Case: Suitable for small or unsorted datasets where setting up more complex search algorithms is unnecessary.
+
+Binary Search:
+
+Explanation: Binary search is an efficient search algorithm that works on sorted datasets. It repeatedly divides the search interval in half and compares the middle element with the target. If the middle element matches the target, the search is complete; otherwise, the algorithm decides whether to search the left or right half.
+
+Time Complexity: O(log n) in the worst-case scenario, where n is the number of elements in the sorted list.
+
+Use Case: Ideal for large, sorted datasets where fast search performance is critical.
+
+Analysis
+
+Time Complexity Comparison
+
+Linear Search:
+
+Time Complexity: O(n), where n is the number of books.
+Suitable for small or unsorted datasets where searching is done occasionally or where sorting the data isn't feasible.
+
+Binary Search:
+
+Time Complexity: O(log n), where n is the number of books.
+Requires the data to be sorted before searching.
+More efficient than linear search for large, sorted datasets.
+When to Use Each Algorithm
+
+Linear Search:
+
+Use when the dataset is small or unsorted.
+Simple to implement and doesn't require the data to be sorted.
+Suitable for one-time or occasional searches.
+Binary Search:
+
+
+Use when the dataset is large and sorted.
+Requires initial sorting of the data, but provides much faster search times for large datasets.
+
+Ideal for frequent search operations where performance is critical.

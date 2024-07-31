@@ -1,0 +1,46 @@
+Step 1: Understand Linked Lists
+
+Types of Linked Lists:
+
+Singly Linked List:
+
+Each node in a singly linked list contains two fields: one for storing data (e.g., a Task object) and one for storing the reference (or pointer) to the next node in the sequence.
+
+The last node points to null, indicating the end of the list.
+
+Traversal is only possible in one direction (from head to tail).
+
+Doubly Linked List:
+
+In addition to the data and a reference to the next node, each node contains a reference to the previous node.
+
+This allows traversal in both directions (from head to tail and vice versa).
+
+The first node’s previous pointer and the last node’s next pointer both point to null
+
+Analysis
+
+Time Complexity of Each Operation:
+
+Add Operation:
+
+Time Complexity: O(n) for adding a task at the end of the list (as it requires traversal of the list).
+Time Complexity: O(1) if you maintain a tail pointer for adding to the end.
+Search Operation:
+
+Time Complexity: O(n) as you may need to traverse the entire list to find the task.
+Traverse Operation:
+
+Time Complexity: O(n) as you visit each element in the list once.
+
+Delete Operation:
+
+Time Complexity: O(n) as you may need to traverse the list to find the task to delete.
+
+Advantages of Linked Lists over Arrays for Dynamic Data:
+
+Dynamic Size: Unlike arrays, linked lists do not have a fixed size, and they can grow or shrink as needed without reallocating or copying data.
+
+Efficient Insertions/Deletions: Insertions and deletions are more efficient (in terms of memory reallocation) compared to arrays, especially for non-contiguous data.
+
+Memory Utilization: Linked lists can be more memory-efficient for dynamic data, as they do not need to allocate memory ahead of time
