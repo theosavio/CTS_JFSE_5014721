@@ -9,7 +9,6 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <name>LibraryManagement</name>
-  <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
   <properties>
@@ -22,17 +21,17 @@
        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>5.3.27</version> <!-- Replace with the latest stable version -->
+            <version>5.3.27</version> 
         </dependency>
         <!-- Spring Beans -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <version>5.3.27</version> <!-- Replace with the latest stable version -->
+            <version>5.3.27</version> 
         </dependency>
     
     
-    <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+    
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-core</artifactId>
